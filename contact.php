@@ -13,7 +13,7 @@ if (get_magic_quotes_gpc()) {
     $message = stripslashes($message);
 }
 
-$address = "bexaca@gmail.com";
+$address = "silver.office365@gmail.com";
 $e_subject = "$name Vam je poslao email.";
 $e_content = "$message" . PHP_EOL . PHP_EOL;
 $e_reply = "$name može biti kontaktiran putem emaila: $email.";
