@@ -114,15 +114,19 @@
 		}
 	});
 
-	$("#collapseExample").on('classChange', function () {
-		console.log('here')
+	$("#more-view").click(function () {
 		if ($("#collapseExample").hasClass("show")) {
-			console.log('has')
+			setTimeout(() => {
+				$("#more-view").text('Vidi više')
+			}, 200);
+
 			return
 		}
-		console.log('has not')
+
+		setTimeout(() => {
+			$("#more-view").text('Vidi manje')
+		}, 200);
 	});
 
 
-	console.log('asdaf')
 })(jQuery);
