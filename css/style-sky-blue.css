@@ -1109,6 +1109,17 @@ footer .credits a {
   display: block;
 }
 
+.row.show {
+  display: flex;
+}
+
+.work-img {
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .validation {
   color: red;
   display: none;
