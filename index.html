@@ -458,14 +458,6 @@
         </div>
         <div class="col-md-4">
           <div class="work-box">
-            <a href="img/gallery/image21.jpg" data-lightbox="gallery-mf">
-              <div class="work-img" style="background-image: url(./img/gallery/image21.jpg);">
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
             <a href="img/gallery/image22.jpg" data-lightbox="gallery-mf">
               <div class="work-img" style="background-image: url(./img/gallery/image22.jpg);">
               </div>
@@ -708,9 +700,9 @@
                     </h5>
                   </div>
                   <div>
-                    <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
+                    <form action="contact.php" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Vaša poruka je poslata, neko će Vas uskoro kontaktirati.</div>
+                      <div id="errormessage">Nešto je pošlo naopako, molim Vas da pokušate ponovo ili da pošaljete mail na silver.office365@gmail.com.</div>
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
@@ -735,8 +727,8 @@
                         </div>
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required"
-                              data-msg="Please write something for us" placeholder="Poruka"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="5" data-rule="required"
+                              data-msg="Molimo da unesete poruku" placeholder="Poruka"></textarea>
                             <div class="validation"></div>
                           </div>
                         </div>
