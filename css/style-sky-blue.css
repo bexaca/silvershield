@@ -345,9 +345,30 @@ a:hover {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#preloader:before {
+#preloader img {
+  width: 30%;
+  max-width: 200px;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+/* #preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -359,7 +380,7 @@ a:hover {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @-webkit-keyframes animate-preloader {
   0% {

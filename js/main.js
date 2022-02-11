@@ -117,16 +117,38 @@
 	$("#more-view").click(function () {
 		if ($("#collapseExample").hasClass("show")) {
 			setTimeout(() => {
-				$("#more-view").text('Vidi više')
+				$(this).text('Vidi više')
 			}, 200);
 
 			return
 		}
 
 		setTimeout(() => {
-			$("#more-view").text('Vidi manje')
+			$(this).text('Vidi manje')
 		}, 200);
 	});
 
+	$.ajax({
+		type: "GET",
+		url: "./file.php",
+		dataType: "json",
+		success: function (response) {
+			let images = '';
+
+			Object.values(response).forEach(img => {
+				images = images + `<div class="col-md-4">
+					<div class="work-box">
+					  <a href="img/gallery/rest/${img}" data-lightbox="gallery-mf">
+						<div class="work-img" style="background-image: url(./img/gallery/rest/${img});">
+						</div>
+					  </a>
+					</div>
+				  </div>`}
+			)
+
+			$("#collapseExample").html(images)
+		}
+
+	});
 
 })(jQuery);

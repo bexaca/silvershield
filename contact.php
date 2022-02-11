@@ -1,6 +1,8 @@
 <?php
+echo "ERROR!";
 
 if (!$_POST) exit;
+
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
